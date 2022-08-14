@@ -1,0 +1,26 @@
+
+<h4 class="text-center">Login</h4>
+
+<form class="form mt-4" [formGroup]="loginForm" (submit)="realizarLogin()">
+  <div class="form-group">
+    <input class="form-control" placeholder="Email"  formControlName="email"/>
+  </div>
+
+  <div class="form-group">
+    <input type="password" class="form-control" placeholder="Senha" formControlName="senha"/>
+  </div>
+  <div class="col-md-6" style="float: right;">
+    <button class="btn btn-primary btn-block">
+      Login
+    </button>
+  </div>
+
+  <div>
+    <p>
+      <a [routerLink]="['novo-cadastro']">Novo cadastro</a>
+      |
+      <a [routerLink]="['recuperar-senha']">Recuperar senha</a>
+    </p>
+  </div>
+</form>
+

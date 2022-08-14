@@ -1,0 +1,26 @@
+<h4 class="text-center">Registre-se!</h4>
+
+<form class="form mt-4" [formGroup]="usuarioForm" (submit)="cadastrar()">
+  <div class="form-group">
+    <input class="form-control" placeholder="Nome completo" formControlName="nomeCompleto"/>
+  </div>
+  <div class="form-group">
+    <input class="form-control" placeholder="Data de nascimento" formControlName="dataNascimento"/>
+  </div>
+  <div class="form-group">
+    <input class="form-control" placeholder="Telefone" formControlName="telefone" />
+  </div>
+  <div class="form-group">
+    <input class="form-control" placeholder="Email" formControlName="email" />
+  </div>
+  <div class="col-md-6" style="float: right;">
+    <button class="btn btn-primary btn-block">Cadastrar</button>
+  </div>
+</form>
+
+<div class="form-group">
+  <p>
+     <a [routerLink]="['']">Faça Login</a>
+  </p>
+</div>
+

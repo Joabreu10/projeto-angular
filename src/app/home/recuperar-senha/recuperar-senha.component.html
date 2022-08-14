@@ -1,0 +1,16 @@
+<h4 class="text-center">Recuperar senha</h4>
+
+<form class="form mt-4" [formGroup]="recuperarSenhaForm" (ngSubmit)="recuperar()" >
+  <div class="form-group">
+    <input class="form-control" placeholder="Email" formControlName="email"/>
+  </div>
+  <div class="col-md-4" style="float: right;">
+    <button class="btn btn-primary btn-block">Enviar</button>
+  </div>
+
+  <div class="form-group">
+    <p>
+      <a [routerLink]="['']">Voltar</a>
+    </p>
+  </div>
+</form>
